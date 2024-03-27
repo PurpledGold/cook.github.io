@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap" rel="stylesheet">
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: rgba(10, 51, 136, 0.8)
+}
+input {
+	font-size: 22px;
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Vast Shadow', serif;
+  text-align: center;
+  font-size: 75px;
+  color: rgba(130, 0, 0, 0.8);
+  margin: 60px 0 0 0;
+}
+h2 {
+  font-family: 'Vina Sans', serif;
+  text-align: center;
+  color: white;
+  margin: 0px 0 70px 0;
+  font-size: 40px;
+}
+p {
+  font-family: 'Philosopher', sans-serif;
+  color: rgba(255,255,25,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,10,72,5), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("https://i.ytimg.com/vi/g0WmiKWBOKc/mqdefault.jpg");
+  background-size: 300px;
+}
+.second{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnXC9d5Pq7oD_tACQZWoQnQAaVaLSGgkbKzJ4al5xzNfD4-sdq");
+  background-size: 600px 200px;
+}
+.dessert{
+  background-image: url("https://media.sketchfab.com/models/805f2a9e50f84c52ad68c379e4366429/thumbnails/81326035ee414324be46b096e03998b1/9440750a5399421cae37bae6d18b231d.jpeg");
+  background-size: 600px;
+  background-position: -2;
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+  .first {
+    background-size: 140px 180px;
+  }
+  .second {
+    background-size: 300px 200px;
+    
+  }
+  .dessert {
+    background-size: 500px;
+    background-position: -107;
+  }
+  h1 {
+    font-size: 38.5px;
+  }
+  
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>Zabir's Restaurant</h1>
+<h2>A New York City 5-Star Eatery!</h2>
+<div class="first">
+<input class="quantities" type="number" min="0" style="width: 50px" class="quantities">
+  <p>Heisenburger <span class="price">$35.00</span><br />
+  <small>A burger inspired by the famous drug-lord, Walter Hartwell White. This burger may or may not contain methempatamine.  </small></p>
+</div>
+
+<div class="second">
+<input class="quantities" type="number" min="0" style="width: 50px" class="quantities">
+  <p>espunche bab <span class="price">$472.17</span><br />
+  <small>I forbid anyone from eating this, if you need medical attention afterwards, do not sue us, we already have informed consumers beforehand. This dish is also one of New York's finest, made carefully by high quality chefs.(we make sure to choose our chefs by their ability to solve geometric equations and their strategies used when writing an essay.) </small></p>
+</div>
+  
+<div class="dessert">
+<input class="quantities" type="number" min="0" style="width: 50px" class="quantities">
+  <p>Roblox Pizza <span class="price">$2.50</span><br />
+  <small>This isn't New York without pizza, the state's most iconic dish, with various toppings and various different ways to prepare it. The pizza we sell here at Zabir's Restaurant is some of the best of it's kind. "Nom nom nom", said he.</small></p>
+</div>
+  <br><br>
+  <input id="Name" placeholder="Your Name!">
+  <input id="Email" type="email" placeholder="Your credit card info!">
+  <input id="submit" type="submit">
+  <br><br>
+  
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+  
+<script type="module">
+  // Import the functions you need from the SDKs you need
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
+  import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-database.js";
+  
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+
+    apiKey: "AIzaSyBKqq9rMysQAol2Zwu0lJlpLbenbRq3vEc",
+    authDomain: "zabir-cook.firebaseapp.com",
+    databaseURL: "https://zabir-cook-default-rtdb.firebaseio.com",
+    projectId: "zabir-cook",
+    storageBucket: "zabir-cook.appspot.com",
+    messagingSenderId: "668059659644",
+    appId: "1:668059659644:web:f39e887ba2f76c6201c8f9"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+    const db = getDatabase(app);
+	const Name = document.querySelector("#Name") 
+	const Email = document.querySelector("#Email")
+	const quantities = document.querySelectorAll(".quantities")
+	const itemsList = ["burg", "spunch", "pizza"]
+	const prices = document.querySelectorAll(".price")
+	document.querySelector('#submit').addEventListener('click', Submit)
+
+	function Submit() {
+		  const timestamp = buildTimestamp()
+	  let total = 0
+  	  let cart = { }
+  	  for  (let i=0; i<quantities.length; i=i+1) {
+  	  	if (quantities[i].value != "0" && quantities[i].value != "") {
+let price = prices[i].innerHTML.replace('$', '')
+			  total = total + quantities[i].value * price	
+  	  		cart[itemsList[i]] = parseInt(quantities[i].value) 
+  	  	}
+  	  	quantities[i].value = ""
+  	  }
+		
+	  
+		  set(ref(db, timestamp), {
+			  Name: Name.value,
+		      email: Email.value,
+			  cart: cart,
+			  totalPrice: total,
+			  paid: "not yet",
+		  });
+
+		  Name.value = ""
+		  Email.value = ""
+		}
+	
+	function buildTimestamp() {
+			  const now = new Date();
+			  let timestamp = now.getFullYear().toString() + "/";
+			  //const month = now.toLocaleString('default', { month: 'long' });
+
+			  let month = now.getMonth()+1   //add 1 because Javascript uses 0 for January
+			  month = month.toString()
+			  month = addLeadingZero(month)
+			  timestamp += month + "/"; 
+
+			  let date = now.getDate().toString()
+			  date = addLeadingZero(date)
+			  timestamp += date + "/";
+
+			  let hours = now.getHours().toString()
+			  hours = addLeadingZero(hours)
+			  timestamp += hours + ":";
+
+			  let minutes = now.getMinutes().toString()
+			  minutes = addLeadingZero(minutes)
+			  timestamp += minutes + ":";
+
+			  let seconds = now.getSeconds().toString()
+			  seconds = addLeadingZero(seconds)
+			  timestamp += seconds;
+  
+			  return timestamp
+			}
+	
+	function addLeadingZero(units) {
+				if (units.length < 2) {
+					units = "0" + units
+				}
+				return units
+			}
+</script>
+</body>
